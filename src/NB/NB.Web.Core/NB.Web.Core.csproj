@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <NoWarn>1701;1702;1591</NoWarn>
+        <DocumentationFile>NB.Web.Core.xml</DocumentationFile>
+	 
+    </PropertyGroup>
+    <ItemGroup>
+        <None Remove="NB.Web.Core.xml"/>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\NB.Application\NB.Application.csproj"/>
+    </ItemGroup>
+</Project>

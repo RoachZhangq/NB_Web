@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <NoWarn>1701;1702;1591</NoWarn>
+        <DocumentationFile>NB.Application.xml</DocumentationFile>
+        <ImplicitUsings>enable</ImplicitUsings>
+		 
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="applicationsettings.json"/>
+        <None Remove="NB.Application.xml"/>
+        <None Remove="IServices\"/>
+        <None Remove="Services\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="applicationsettings.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\NB.Core\NB.Core.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Services\"/>
+    </ItemGroup>
+
+</Project>
